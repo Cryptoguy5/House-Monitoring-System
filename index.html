@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Monitoring System</title>
+    <style>
+        body {
+            height: 100%;
+            padding: 5%;
+            background-color: whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .top {
+         background-color: gray;
+         color: white;
+         padding: 20px;
+         padding-left: 50px;
+         padding-right: 50px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         font-size: 24px;
+         margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 36px;
+            display: flex;
+            margin: 25px;
+        }
+
+
+        .date {
+              float: right
+            
+        }
+
+        .home {
+            float: left;
+
+        }
+
+        .bottom {
+            display: grid;
+            grid-template-columns: repeat(3, 32.3%);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+        }
+
+        .item {
+            text-align: center;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .value {
+            font-size: 72px;
+            margin: 50px;
+        }
+
+        img {
+            width: 36px;
+            margin: 5px;
+        }
+         
+        @media (max-width: 680px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                text-align: center;
+            }
+
+            .top {
+                width: 72%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+            }
+
+            p { font-size: 18px;
+                }
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+      <p>
+        Home Monitoring
+      </p>
+      <p>
+        11/7/2023
+      </p>
+    </div>
+    <div class="bottom">
+      <div class="item">
+        <p>
+            <img src="./flash (1).png" alt="Electricity">
+            Electricity
+        </p>
+        <h2 class="value">
+            78
+        </h2>
+         <p>
+            kw/h
+         </p>
+        </div>
+         <div class="item">
+            <p>
+            <img src="./drop.png" alt="Water">
+            Water
+            </p>
+            <h2 class="value"> 
+                12
+            </h2>
+             <p>
+                m<sup>3</sup>/h
+             </p>          
+      </div>
+      <div class="item">
+        <p> 
+        <img src="./delete.png" alt="Trash">
+        Trash
+        </p>
+        <h2 class="value">
+            0.5
+        </h2>
+         <p>
+            Kg/h
+         </p>          
+     </div>
+     <div class="item">
+        <p>
+            <img src="./thermometer.png" alt="Temperature">
+            Temperature
+        </p>
+        <h2 class="value">
+            20 &deg;
+        </h2>
+         <p>
+            Celsius
+         </p>          
+     </div>
+     <div class="item">
+        <p>
+            <img src="./humidity.png" alt="humidity">
+            Humidity
+        </p>
+        <h2 class="value">
+            48
+        </h2>
+         <p>
+            Percent
+         </p>          
+      </div>
+      <div class="item">
+        <p>
+            <img src="./wifi.png" alt="Bandwidth Usage">
+            Bandwidth Usage
+        </p>
+        <h2 class="value">
+            10
+        </h2>
+         <p>
+            Mb/h
+         </p>          
+  </div>
+    </div>
+    
+</body>
+</html>
